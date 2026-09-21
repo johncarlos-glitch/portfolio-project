@@ -1,8 +1,11 @@
-/* Reset basic defaults */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,13 +13,19 @@ body {
     background-color: #f4f7f6;
     color: #333333;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 20px;
+    padding: 40px 20px;
+    gap: 40px;
 }
 
-/* Container Card */
+.profile-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .profile-card {
     background-color: #ffffff;
     max-width: 450px;
@@ -32,7 +41,6 @@ body {
     transform: translateY(-5px);
 }
 
-/* Profile Photo Styling */
 .photo-container {
     margin-bottom: 20px;
 }
@@ -46,7 +54,6 @@ body {
     box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
 }
 
-/* Full Name */
 .full-name {
     font-size: 1.8rem;
     font-weight: 700;
@@ -54,7 +61,6 @@ body {
     margin-bottom: 8px;
 }
 
-/* Tagline */
 .tagline {
     font-size: 0.95rem;
     font-weight: 600;
@@ -64,7 +70,6 @@ body {
     margin-bottom: 16px;
 }
 
-/* Short Intro */
 .short-intro {
     font-size: 0.95rem;
     line-height: 1.6;
@@ -72,7 +77,6 @@ body {
     margin-bottom: 28px;
 }
 
-/* "Learn More" Button */
 .btn-learn-more {
     display: inline-block;
     padding: 12px 28px;
@@ -88,4 +92,61 @@ body {
 .btn-learn-more:hover {
     background-color: #0056b3;
     box-shadow: 0 4px 12px rgba(0, 91, 179, 0.3);
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    background-color: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+    text-align: center;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+.bio-block {
+    margin-bottom: 20px;
+}
+
+.bio-block h3 {
+    font-size: 1.1rem;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.bio-block p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.hobbies-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hobbies-list li {
+    font-size: 0.95rem;
+    color: #555555;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+}
+
+.hobbies-list li:last-child {
+    border-bottom: none;
 }
