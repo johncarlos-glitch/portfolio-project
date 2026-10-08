@@ -193,3 +193,20 @@ body {
     line-height: 1.5;
     color: #666666;
 }
+.education, .experience {
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.education div, .experience div {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+}
+
+.education h3, .experience h3 {
+    margin-bottom: 4px;
+}
