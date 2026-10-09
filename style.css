@@ -338,3 +338,57 @@ body {
 .btn-submit:active {
     transform: scale(0.98);
 }
+
+/* RESPONSIVE PART*/
+
+@media (max-width: 768px) {
+    body {
+        gap: 25px;
+        padding: 0 10px;
+    }
+
+    .navbar {
+        padding: 12px 20px;
+    }
+
+    .navbar nav {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    
+    .profile-card,
+    .about-card,
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-name {
+        font-size: 1.4rem;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+}/* dre mag end para dimawala*/
