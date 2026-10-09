@@ -392,3 +392,15 @@ body {
         font-size: 0.8rem;
     }
 }/* dre mag end para dimawala*/
+
+/* footer section */
+.site-footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+    color: #666666;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
